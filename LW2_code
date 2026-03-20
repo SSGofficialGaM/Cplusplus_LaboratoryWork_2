@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    //Task 1
+    float parA;
+    float parC;
+    float x;
+    
+    cout << "Enter the value of A: ";
+    cin >> parA;
+    
+    cout << "Enter the value of C: ";
+    cin >> parC;
+    
+    cout << "Enter the value of x: ";
+    cin >> x;
+    
+    if (parA == parC) {
+        float y = x * pow(parA - parC, 3);
+        cout << "y = " << y;
+    }
+    else {
+        float y = pow(x, 3) - parA;
+        cout << "y = " << y;
+    }
+    
+    //Task 2
+    float x, y;
+    
+    cout << "Enter the value of x: ";
+    cin >> x;
+    
+    cout << "Enter the value of y: ";
+    cin >> y;
+    
+    if (-1 <= x && x <= 0 && 0 <= y && y <= 1 || 0 <= x && x <= 1 && -1 <= y && y <= 0) {
+        cout << "The point is successfully inside the zone!";
+    }
+    else {
+        cout << "The point is NOT in the zone";
+    }
+}
